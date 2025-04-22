@@ -26,8 +26,8 @@ D:\Projects\cance\
 Start by cloning this project to your local machine:
 
 ```bash
-git clone <repository_url>
-cd <repository_folder>
+git clone https://github.com/imshubhamvs/cancer_prediction.git
+cd cancer_prediction
 ```
 
 ### 2. Train the Model
