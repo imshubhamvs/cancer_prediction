@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cancer Prediction</h1>
+        <form id="prediction-form">
+            <div class="form-group">
+                <label for="Age">Age</label>
+                <input type="number" id="Age" required>
+            </div>
+            <div class="form-group">
+                <label for="Gender">Gender</label>
+                <select id="Gender" required>
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="BMI">BMI</label>
+                <input type="number" step="0.01" id="BMI" required>
+            </div>
+            <div class="form-group">
+                <label for="Smoking">Smoking</label>
+                <select id="Smoking" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="GeneticRisk">Genetic Risk</label>
+                <select id="GeneticRisk" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="PhysicalActivity">How often do you engage in physical exercise each week?</label>
+                <select id="PhysicalActivity" required>
+                    <option value="3">1-2 times per week</option>
+                    <option value="6">3-4 times per week</option>
+                    <option value="9">5+ times per week</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="AlcoholIntake">How often do you consume alcohol?</label>
+                <select id="AlcoholIntake" required>
+                    <option value="0">Never</option>
+                    <option value="2">Occasionally (1-2 times a month)</option>
+                    <option value="4">1-2 times per week</option>
+                    <option value="6">More than 2 times per week</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="CancerHistory">Cancer History</label>
+                <select id="CancerHistory" required>
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </select>
+            </div>
+            <button type="submit" id="submit-btn">Predict</button>
+        </form>
+        <div id="loader" class="loader" style="display:none;"></div>
+        <div id="result" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
